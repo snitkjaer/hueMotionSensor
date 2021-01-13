@@ -1,5 +1,5 @@
 /**
- *  Hue Motion Sensor
+ *  Hue Outdoor Motion Sensor
  *
  *  Copyright 2018 Bogdan Alexe
  *
@@ -16,7 +16,7 @@
 import physicalgraph.zigbee.zcl.DataType
  
 metadata {
-    definition (name: "Hue Motion Sensor", namespace: "bogdanalexe90", author: "Bogdan Alexe", vid: "generic-motion", ocfDeviceType: "x.com.st.d.sensor.motion") {
+    definition (name: "Hue Outdoor Motion Sensor", namespace: "bogdanalexe90", author: "Bogdan Alexe", vid: "generic-motion", ocfDeviceType: "x.com.st.d.sensor.motion") {
 		capability "Motion Sensor"
 		capability "Configuration"
 		capability "Battery"
@@ -26,7 +26,7 @@ metadata {
 		capability "Sensor"
         capability "Health Check"
 
-		fingerprint profileId: "0104", inClusters: "0000,0001,0003,0400,0402,0406", outClusters: "0019", manufacturer: "Philips", model: "SML001", deviceJoinName: "Hue Motion Sensor"
+		fingerprint profileId: "0104", inClusters: "0000,0001,0003,0400,0402,0406", outClusters: "0019", manufacturer: "Philips", model: "SML002", deviceJoinName: "Hue Motion Sensor"
 	}
     
     preferences {        
